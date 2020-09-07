@@ -1,0 +1,28 @@
+@import "variables";
+
+.perspective header {
+  padding-block-start: 16px;
+}
+
+.perspective > header > h2 {
+  font-family: dmSerifDisplayRegular;
+  font-size: 52px;
+  line-height: 64px;
+}
+
+.perspective > header > p {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.perspective__samples {
+  padding-block-start: 16px;
+}
+.samples__visile img {
+  max-width: 100%;
+  min-width: 100%;
+}
+
+
+
+

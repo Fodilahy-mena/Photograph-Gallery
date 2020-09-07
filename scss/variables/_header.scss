@@ -3,7 +3,11 @@ body > header {
   background-color: $header_bg;
   display: flex;
   justify-content: space-between;
-  padding: 16px;
+  padding: 23px;
+}
+
+body > header h1 {
+  margin: 0;
 }
 
 body > header h1 > a {
