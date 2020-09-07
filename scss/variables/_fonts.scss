@@ -1,0 +1,21 @@
+@import "variables";
+
+@font-face {
+  font-family: dmSansRegular;
+  src: local('DM Sans Regular'),
+       local('DM-Sans-Regular'),
+       local('dm-sans-regular'),
+       local('dm sans regular'),
+       url('#{$fonts_path}dm_sans_regular.#{woff2}') format("#{woff2}"),
+       url('#{$fonts_path}dm_sans_regular.#{woff}') format("#{woff}");
+}
+
+@font-face {
+  font-family: dmSansBold;
+  src: local('DM Sans Bold'),
+       local('DM-Sans-Bold'),
+       local('dm-sans-bold'),
+       local('dm sans bold'),
+       url('#{$fonts_path}dm_sans_bold.#{woff2}') format("#{woff2}"),
+       url('#{$fonts_path}dm_sans_bold.#{woff}') format("#{woff}");
+}
