@@ -6,6 +6,10 @@
   font-family: dmSansBold;
   src: local("DM Sans Bold"), local("DM-Sans-Bold"), local("dm-sans-bold"), local("dm sans bold"), url("../fonts/dm_sans_bold.woff2") format("woff2"), url("../fonts/dm_sans_bold.woff") format("woff"); }
 
+@font-face {
+  font-family: dmSerifDisplayRegular;
+  src: local("DM Serif Display Regular"), local("DM-Serif-Dispaly-Regular"), local("dm-serif-display-regular"), local("dm serif display regular"), url("../fonts/dm_serif_display_regular.woff2") format("woff2"), url("../fonts/dm_serif_display_regular.woff") format("woff"); }
+
 html {
   font-family: dmSansRegular;
   font-size: 16px;
