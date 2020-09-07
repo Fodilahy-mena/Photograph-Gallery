@@ -1,0 +1,85 @@
+
+@import "variables";
+.navigation {
+  padding: 1rem;
+  height: 50%;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 250px;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+  background-color: #f8f8f8;
+  box-shadow: 0 0 50px rgba(0,0,0,.5);
+}
+  
+body > [type="checkbox"]:checked ~ .navigation {
+  transform: translateY(0%);
+}
+
+  
+body > [type="checkbox"]:checked ~ header label {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0);
+}
+
+  
+.navigation > ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+
+  }
+.navigation label {
+  width: 250px;
+  display: block;
+  height: 30px;
+}
+  body > [type="checkbox"] {
+    display: none;
+  }
+  
+.navigation > label, body > header > label {
+  width: 20px;
+  height: 14px;
+  background-image: url(../images/icon_menu.png);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 32px;
+
+}
+.navigation > label {
+  opacity: 0;
+}
+
+.navigation > ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.navigation > ul a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: $menu_colour;
+  font-weight: bold;
+  line-height: 24px;
+  opacity: .5;
+  transition: opacity 0.3s;
+  display: block;
+  padding: 1rem;
+}
+.navigation > ul a:hover {
+  opacity: 1;
+}
+
+

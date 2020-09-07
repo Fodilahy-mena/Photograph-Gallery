@@ -1,0 +1,17 @@
+@import "variables";
+body > header {
+  background-color: $header_bg;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+body > header h1 > a {
+  text-decoration: none;
+  color: $link_colour;
+  text-transform: uppercase;
+}
+
+.a11y {
+  opacity: 0;
+}
