@@ -29,6 +29,7 @@ a {
   padding: 1rem;
   height: 50%;
   position: absolute;
+  z-index: 3;
   top: -7px;
   right: 0;
   bottom: 0;
@@ -92,7 +93,7 @@ body > [type="checkbox"] {
   display: block;
   padding: 1rem; }
 
-.navigation > ul a:hover {
+.navigation > ul > li a:hover {
   opacity: 1; }
 
 body > header {
@@ -125,8 +126,42 @@ body > header h1 > a {
   line-height: 32px; }
 
 .perspective__samples {
-  padding-block-start: 16px; }
+  padding-block-start: 16px;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-gap: 12px; }
 
-.samples__visile img {
+.perspective__samples img {
+  max-width: 100%;
+  min-width: 100%;
+  border-radius: 5px; }
+
+.samples__visible {
+  padding-inline-end: 16px; }
+
+.samples__visible img {
   max-width: 100%;
   min-width: 100%; }
+
+.samples__slides {
+  overflow: hidden;
+  width: 100%; }
+
+.samples__slides > div {
+  overflow-x: hidden;
+  margin-bottom: -17px;
+  overflow-y: hidden; }
+
+.samples__slides > div > div {
+  display: flex; }
+
+.samples__slides div * {
+  overflow-x: auto;
+  width: 100%;
+  white-space: nowrap;
+  cursor: pointer; }
+
+.samples__slides img {
+  margin-inline-end: 16px;
+  max-width: 35%;
+  min-width: 35%; }
