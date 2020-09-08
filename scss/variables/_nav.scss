@@ -1,5 +1,7 @@
 
 @import "variables";
+
+// Css about nav menu
 .navigation {
   padding: 1rem;
   height: 50%;
@@ -51,7 +53,7 @@ body > [type="checkbox"]:checked ~ header label {
 .navigation > label, body > header > label {
   width: 20px;
   height: 14px;
-  background-image: url(../images/icon_menu.png);
+  background-image: url(../images/icon_menu.svg);
   background-size: 20px;
   background-repeat: no-repeat;
   position: relative;
@@ -80,5 +82,47 @@ body > [type="checkbox"]:checked ~ header label {
 .navigation > ul > li a:hover {
   opacity: 1;
 }
+
+// Css about nav social links
+
+.links_social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 68px;
+  list-style: none;
+  padding: 0;
+  margin-block-start: 32px;
+  margin-block-end: 90px;
+}
+.icon_facebook {
+  background-image: url(../images/icon_facebook.svg);
+}
+.icon_twitter {
+  background-image: url(../images/icon_twitter.svg);
+}
+.icon_instagram {
+  background-image: url(../images/icon_instagram.svg);
+}
+.icon {
+  background-repeat: no-repeat;
+  background-size: 1rem;
+  background-position: 50% 50%;
+}
+.icon_facebook, 
+.icon_twitter,
+.icon_instagram {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  text-indent: -999rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  transition: background-color .3s;
+  margin: 0 -0.5rem;
+}
+
+
+
 
 
