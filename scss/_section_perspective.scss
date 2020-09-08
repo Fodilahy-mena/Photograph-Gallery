@@ -41,7 +41,7 @@
 
 // About the first article in the perspective section
 .perspective__samples {
-  padding-block-start: 16px;
+  padding-block-start: $common_padding;
   display: grid;
   grid-template-rows: 1fr auto;
   grid-gap: 12px;
@@ -85,7 +85,7 @@
   cursor:pointer
 }
 .samples__slides img {
-  margin-inline-end: 16px;
+  margin-inline-end: $common_padding;
   max-width: 35%;
   min-width: 35%;
 }
