@@ -1,4 +1,4 @@
-@import "variables";
+@import "../scss/variables/variables";
 body > header {
   background-color: $header_bg;
   display: flex;
