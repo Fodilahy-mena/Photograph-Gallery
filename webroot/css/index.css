@@ -257,3 +257,69 @@ td > span {
   font-weight: bold;
   font-size: 16px;
   line-height: 24px; }
+
+.section__updates {
+  background-color: #FFDD78;
+  padding: 16px;
+  margin: -15px;
+  padding-block-start: 63px;
+  padding-block-end: 53px; }
+
+.section__updates h2 {
+  font-family: dmSerifDisplayRegular;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 48px; }
+
+.section__updates > header > span {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase; }
+
+.subscribe__type {
+  padding: .5rem;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  line-height: 19px;
+  border: 0;
+  border-radius: 2.94008px; }
+
+.subscribe__type > label {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase; }
+
+.email {
+  width: 346px;
+  height: 76px;
+  margin-bottom: 16px;
+  text-align: left;
+  padding: 0; }
+
+.email input {
+  width: 326px;
+  padding-block-start: 13px;
+  padding-block-end: 13px;
+  padding-inline-start: 16px;
+  border-radius: 5px;
+  border: 1px solid #DADADA;
+  margin-block-start: 8px; }
+
+.submit {
+  width: 170px;
+  background-color: #434CCC;
+  padding-inline-start: 0;
+  padding-inline-end: 0; }
+
+.submit button {
+  margin-block-start: 3px;
+  margin-block-end: 3px;
+  border: 0;
+  background-color: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center; }
