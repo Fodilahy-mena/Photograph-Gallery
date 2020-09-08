@@ -1,5 +1,6 @@
 @import "variables";
 
+// About the header of first section
 .perspective header {
   padding-block-start: 16px;
 }
@@ -28,6 +29,7 @@
 
 .perspective > header > h2 {
   font-family: dmSerifDisplayRegular;
+  font-weight: normal;
   font-size: 52px;
   line-height: 64px;
 }
@@ -37,7 +39,7 @@
   line-height: 32px;
 }
 
-// About the pictures in the perspective section
+// About the first article in the perspective section
 .perspective__samples {
   padding-block-start: 16px;
   display: grid;
@@ -87,6 +89,25 @@
   max-width: 35%;
   min-width: 35%;
 }
+
+// About the second article in the perspective section
+
+.perspective h3 {
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.mineral > p:nth-of-type(1) {
+  font-size: 18px;
+  line-height: 32px;
+  margin-block-end: 32px;
+}
+.mineral > p:nth-of-type(2) {
+  line-height: 24px;
+  opacity: .5;
+}
+
 
 
 
