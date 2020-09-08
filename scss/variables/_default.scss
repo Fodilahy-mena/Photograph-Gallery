@@ -2,7 +2,7 @@
 
 html {
   font-family: dmSansRegular;
-  font-size: 16px;
+  font-size: $default_font_size;
   line-height: 1.25;
 }
 body {
@@ -12,7 +12,7 @@ body {
 }
 
 main {
-  padding: 15px;
+  padding: $common_padding - 1;
 }
 
 a {

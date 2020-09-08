@@ -27,7 +27,7 @@ a {
   text-decoration: none; }
 
 .navigation {
-  padding: 1rem;
+  padding: 16px;
   height: 50%;
   position: absolute;
   z-index: 3;
@@ -79,11 +79,6 @@ body > [type="checkbox"] {
 .navigation > label {
   opacity: 0; }
 
-.navigation > ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column; }
-
 .navigation > ul a {
   text-transform: capitalize;
   color: #000000;
@@ -92,7 +87,7 @@ body > [type="checkbox"] {
   opacity: .5;
   transition: opacity 0.3s;
   display: block;
-  padding: 1rem; }
+  padding: 16px; }
 
 .navigation > ul > li a:hover {
   opacity: 1; }
@@ -102,8 +97,9 @@ body > [type="checkbox"] {
   flex-direction: row;
   justify-content: space-between;
   max-width: 68px;
-  list-style: none;
+  margin: 0;
   padding: 0;
+  list-style: none;
   margin-block-start: 32px;
   margin-block-end: 90px; }
 

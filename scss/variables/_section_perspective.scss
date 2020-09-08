@@ -2,7 +2,7 @@
 
 // About the header of first section
 .perspective header {
-  padding-block-start: 16px;
+  padding-block-start: $common_padding;
 }
 
 .perspective header > a {
@@ -30,12 +30,12 @@
 .perspective > header > h2 {
   font-family: dmSerifDisplayRegular;
   font-weight: normal;
-  font-size: 52px;
+  font-size: $default_font_size + 36;
   line-height: 64px;
 }
 
 .perspective > header > p {
-  font-size: 18px;
+  font-size: $default_font_size + 2;
   line-height: 32px;
 }
 
@@ -52,7 +52,7 @@
   border-radius: 5px;
 }
 .samples__visible {
-  padding-inline-end: 16px;
+  padding-inline-end: $common_padding;
 }
 .samples__visible img {
   max-width: 100%;
@@ -94,12 +94,12 @@
 
 .perspective h3 {
   font-weight: normal;
-  font-size: 40px;
+  font-size: $default_font_size + 24;
   line-height: 48px;
 }
 
 .mineral > p:nth-of-type(1) {
-  font-size: 18px;
+  font-size: $default_font_size + 2;
   line-height: 32px;
   margin-block-end: 32px;
 }

@@ -17,17 +17,17 @@
 
 
 .perspective__update tr > td:nth-of-type(2) {
-  padding-inline-start: 16px;
+  padding-inline-start: $common_padding;
 }
 td > h4 {
   opacity: .5;
   font-weight: normal;
-  font-size: 16px;
+  font-size: $default_font_size;
   line-height: 24px;
 }
 
 td > span {
   font-weight: bold;
-  font-size: 16px;
+  font-size: $default_font_size;
   line-height: 24px;
 }

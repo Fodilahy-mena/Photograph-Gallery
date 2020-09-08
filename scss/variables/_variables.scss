@@ -1,8 +1,19 @@
 @import "colours";
 
+// Reseting list
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
 // About fonts variables
 
 $fonts_path: "../fonts/";
 $woff2: 'woff2';
 $woff: 'woff';
+$default_font_size: 16px;
+$common_padding: 16px;
 

@@ -3,7 +3,7 @@ body > header {
   background-color: $header_bg;
   display: flex;
   justify-content: space-between;
-  padding: 23px;
+  padding: $common_padding + 7;
 }
 
 body > header h1 {
