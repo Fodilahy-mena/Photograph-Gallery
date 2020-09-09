@@ -18,7 +18,8 @@ html {
 body {
   margin: 0;
   background-color: #F6F8F9;
-  color: #000000; }
+  color: #000000;
+  overflow-x: hidden; }
 
 main {
   padding: 15px; }
@@ -36,7 +37,7 @@ a {
 
 .navigation {
   padding: 16px;
-  height: 50%;
+  height: 100%;
   position: absolute;
   z-index: 3;
   top: -7px;
@@ -199,6 +200,8 @@ body > header h1 > a {
   grid-gap: 12px; }
 
 .perspective__samples img {
+  max-width: 100%;
+  min-width: 100%;
   border-radius: 5px; }
 
 .samples__visible {

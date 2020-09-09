@@ -47,6 +47,8 @@
   grid-gap: 12px;
 }
 .perspective__samples img {
+  max-width: 100%;
+  min-width: 100%;
   border-radius: 5px;
 }
 .samples__visible {
