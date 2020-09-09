@@ -254,7 +254,13 @@ body > header h1 > a {
     margin-inline-end: 0;
     padding-block-start: 100px; }
   .mineral {
-    display: flex; } }
+    display: flex; }
+  .samples__slides img {
+    max-width: 137px;
+    margin: auto;
+    min-width: 137px; }
+  .samples__slides img:nth-of-type(1) {
+    margin-inline-start: 0; } }
 
 .mineral__update {
   padding-block-start: 92px; }

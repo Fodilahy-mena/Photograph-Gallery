@@ -118,6 +118,16 @@
   .mineral {
     display: flex;
   }
+
+  .samples__slides img {
+    max-width: 137px;
+    margin: auto;
+    min-width: 137px;
+  }
+
+  .samples__slides img:nth-of-type(1) {
+    margin-inline-start: 0;
+  }
 }
 
 
