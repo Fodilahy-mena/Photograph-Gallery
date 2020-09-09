@@ -238,27 +238,36 @@ body > header h1 > a {
   font-size: 40px;
   line-height: 48px; }
 
-.mineral > p:nth-of-type(1) {
+.mineral p:nth-of-type(1) {
   font-size: 18px;
   line-height: 32px;
   margin-block-end: 32px; }
 
-.mineral > p:nth-of-type(2) {
+.mineral p:nth-of-type(2) {
   line-height: 24px;
   opacity: .5; }
 
-.perspective__update {
+@media (min-width: 1440px) {
+  .mineral__desire {
+    max-width: 570px;
+    margin: auto;
+    margin-inline-end: 0;
+    padding-block-start: 100px; }
+  .mineral {
+    display: flex; } }
+
+.mineral__update {
   padding-block-start: 92px; }
 
-.perspective__update table {
+.mineral__update table {
   max-width: 100%;
   min-width: 100%;
   border-spacing: 0px 16px; }
 
-.perspective__update td {
+.mineral__update td {
   padding: 0; }
 
-.perspective__update tr > td:nth-of-type(2) {
+.mineral__update tr > td:nth-of-type(2) {
   padding-inline-start: 16px; }
 
 td > h4 {

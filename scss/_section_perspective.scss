@@ -97,14 +97,27 @@
   line-height: 48px;
 }
 
-.mineral > p:nth-of-type(1) {
+.mineral p:nth-of-type(1) {
   font-size: $default_font_size + 2;
   line-height: 32px;
   margin-block-end: 32px;
 }
-.mineral > p:nth-of-type(2) {
+.mineral p:nth-of-type(2) {
   line-height: 24px;
   opacity: .5;
+}
+
+@media (min-width: 1440px) {
+  .mineral__desire {
+    max-width: 570px;
+    margin: auto;
+    margin-inline-end: 0;
+    padding-block-start: 100px;
+  }
+
+  .mineral {
+    display: flex;
+  }
 }
 
 
