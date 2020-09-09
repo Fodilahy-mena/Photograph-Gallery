@@ -77,3 +77,16 @@ footer > p {
   font-weight: bold;
   font-size: $default_font_size - 4;
 }
+
+// On desktop view 
+
+@media (min-width: 1440px) {
+  footer {
+    padding-inline-start: 135px;
+    padding-inline-end: 135px;
+  }
+  .border--bottom {
+    margin-inline-start: -135px;
+    margin-inline-end: -135px;
+  }
+}
