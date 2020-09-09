@@ -47,8 +47,6 @@
   grid-gap: 12px;
 }
 .perspective__samples img {
-  max-width: 100%;
-  min-width: 100%;
   border-radius: 5px;
 }
 .samples__visible {
@@ -80,14 +78,13 @@
 }
 .samples__slides div * {
   overflow-x: auto;
-  width: 100%;
   white-space: nowrap;
   cursor:pointer
 }
 .samples__slides img {
-  margin-inline-end: $common_padding;
-  max-width: 35%;
-  min-width: 35%;
+  margin-inline-end: $common_padding - 5;
+  max-width: 137px;
+  min-width: 137px;
 }
 
 // About the second article in the perspective section

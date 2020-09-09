@@ -199,8 +199,6 @@ body > header h1 > a {
   grid-gap: 12px; }
 
 .perspective__samples img {
-  max-width: 100%;
-  min-width: 100%;
   border-radius: 5px; }
 
 .samples__visible {
@@ -224,14 +222,13 @@ body > header h1 > a {
 
 .samples__slides div * {
   overflow-x: auto;
-  width: 100%;
   white-space: nowrap;
   cursor: pointer; }
 
 .samples__slides img {
-  margin-inline-end: 16px;
-  max-width: 35%;
-  min-width: 35%; }
+  margin-inline-end: 11px;
+  max-width: 137px;
+  min-width: 137px; }
 
 .perspective h3 {
   font-weight: normal;
