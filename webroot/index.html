@@ -180,18 +180,21 @@
         <span class="a11y">Site menu</span>
     </label>
     <ul>
-        <li>
-          <a class="about" href="/about">About</a>
-        </li>
-        <li>
-          <a class="protfolio" href="/portfolio">Portfolio</a>
-        </li>
-        <li>
-          <a class="blog" href="/blog">Blog</a>
-        </li>
-        <li>
-          <a class="contact" href="/contact">Contact</a>
-        </li>
+      <li class="active">
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <a class="about" href="/about">About</a>
+      </li>
+      <li>
+        <a class="protfolio" href="/portfolio">Portfolio</a>
+      </li>
+      <li>
+        <a class="blog" href="/blog">Blog</a>
+      </li>
+      <li>
+        <a class="contact" href="/contact">Contact</a>
+      </li>
     </ul>
   </nav>
 
@@ -200,7 +203,7 @@
     <p>The personal website of Jesse McJessesen, professional photographer.</p>
     <h3 class="a11y">Find us on the web with:</h3>
     <nav>
-      <ul class="links_social">
+      <ul class="links_social footer--links">
         <li>
           <a href="/facebook.com/logo" class="icon icon_facebook">Facebook: Logo</a>
         </li>
@@ -215,6 +218,9 @@
 
     <h3 class="a11y">Our websites</h3>
     <ul class="links_site">
+      <li class="active">
+        <a href="/">Home</a>
+      </li>
       <li>
         <a class="about" href="/about">About</a>
       </li>
@@ -234,12 +240,19 @@
         <li>
           <p class="poster_profile">
             <a href="/profile">
-                <img class="image_profile" src="images/first_profile.jpg" alt="profile photo">
+              <img class="image_profile" src="./images/woman_xs.jpg"
+              width="70"
+              height="48"
+              tabindex="0"
+              title="image title" alt="profile photo">
             </a>
           </p>
 
           <div  class="comment">
-            <p>Rust, pumpkin, tans, and spices.</p>
+            <span>
+              Rust, pumpkin, tans, and spices.
+            </span>
+            <br>
             <span>
               July 15, 2019
             </span>
@@ -249,14 +262,20 @@
         <li>
           <p class="poster_profile">
             <a href="/profile">
-              <img class="image_profile" src="images/second_profile.jpg" alt="profile photo">
+              <img class="image_profile" src="./images/arches_sm.jpg"
+              width="70"
+              height="48"
+              tabindex="0"
+              title="image title" 
+              alt="profile photo">
             </a>
           </p>
             
           <div  class="comment">
-            <p>
+            <span>
               Experiencing Japan
-            </p>
+            </span>
+            <br>
             <span>
               July 10, 2019
             </span>
