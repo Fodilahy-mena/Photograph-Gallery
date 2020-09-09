@@ -66,12 +66,7 @@ body > [type="checkbox"]:checked ~ header label {
 
 .navigation > ul a {
   text-transform: capitalize;
-  color: $colour;
-  font-weight: bold;
-  line-height: 24px;
-  opacity: .5;
-  transition: opacity 0.3s;
-  display: block;
+  @include anchor-site;
   padding: $common_padding;
 }
 .navigation > ul > li a:hover {
