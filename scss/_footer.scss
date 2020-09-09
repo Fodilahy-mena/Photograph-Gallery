@@ -1,5 +1,79 @@
 
 @import "../scss/variables/variables";
+
+footer {
+  background-color: $footer_bg;
+  margin: 0;
+  padding: $common_padding;
+}
+
+footer > h2 a {
+  font-family: dmSerifDisplayRegular;
+  font-size: $default_font_size + 8;
+  line-height: 32px;
+  color: $colour;
+  text-transform: uppercase;
+}
+
+footer > p {
+  font-size: $default_font_size;
+  opacity: .5;
+}
+.posts {
+  margin-block-start: 75px;
+  margin-block-end: 75px;
+}
+
+.footer--links {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
 .border--bottom {
-  border-bottom: 1px solid #FFFFFF;
+  border-bottom: 1px solid $colour;
+  opacity: .1;
+  margin-inline-start: -$common_padding;
+  margin-inline-end: -$common_padding;
+}
+.links_site, .posts__comments {
+  @include reset-list;
+}
+.links_site a {
+  @include anchor-site;
+  text-decoration: none;
+  padding: 4px 0px;
+}
+.links_site a:hover {
+  opacity: 1;
+}
+
+.links_site .active > a {
+  opacity: 1;
+  padding:  $common_padding 0px;
+}
+
+.poster_profile img {
+  border-radius: 5px;
+}
+
+.posts__comments li {
+  display: flex;
+}
+.posts__comments li:nth-of-type(1) {
+  margin-block-end: 26px
+}
+.posts__comments li p {
+  margin: 0;
+}
+
+.comment {
+  margin-inline-start: 26px;
+}
+
+.comment > span:nth-of-type(1) {
+  opacity: .5;
+  font-size: $default_font_size - 1;
+}
+.comment > span:nth-of-type(2) {
+  font-weight: bold;
+  font-size: $default_font_size - 4;
 }
