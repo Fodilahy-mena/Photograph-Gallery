@@ -1,22 +1,22 @@
 @import "../scss/variables/variables";
-// About the table in the perspective section
+// About the table in the mineral section
 
-.perspective__update {
+.mineral__update {
   padding-block-start: 92px;
 }
 
-.perspective__update table {
+.mineral__update table {
   max-width: 100%;
   min-width: 100%;
   border-spacing: 0px 16px;
 }
 
-.perspective__update td {
+.mineral__update td {
   padding: 0;
 }
 
 
-.perspective__update tr > td:nth-of-type(2) {
+.mineral__update tr > td:nth-of-type(2) {
   padding-inline-start: $common_padding;
 }
 td > h4 {
