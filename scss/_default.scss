@@ -3,7 +3,7 @@
 html {
   font-family: dmSansRegular;
   font-size: $default_font_size;
-  line-height: 1.25;
+  line-height: 24px;
 }
 body {
   margin: 0;
@@ -17,4 +17,7 @@ main {
 
 a {
   text-decoration: none;
+}
+.navigation .active > a {
+  opacity: 1;
 }
