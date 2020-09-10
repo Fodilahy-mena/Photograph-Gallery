@@ -384,14 +384,14 @@ footer {
   margin: 0;
   padding: 16px; }
 
-footer > h2 a {
+footer > div h2 a {
   font-family: dmSerifDisplayRegular;
   font-size: 24px;
   line-height: 32px;
   color: #000000;
   text-transform: uppercase; }
 
-footer > p {
+footer > div > div > p, .copyright {
   font-size: 16px;
   opacity: .5; }
 
@@ -432,6 +432,9 @@ footer > p {
   opacity: 1;
   padding: 16px 0px; }
 
+.footer__row .links_site {
+  margin-inline-end: 20rem; }
+
 .poster_profile img {
   border-radius: 5px; }
 
@@ -459,6 +462,19 @@ footer > p {
   footer {
     padding-inline-start: 135px;
     padding-inline-end: 135px; }
+  .footer__row {
+    display: flex;
+    justify-content: space-between;
+    padding-block-start: 56px; }
+  .footer__row h3 {
+    display: none; }
+  .footer__row > div {
+    max-width: 270px; }
+  .posts {
+    margin-block-start: 22px; }
   .border--bottom {
     margin-inline-start: -135px;
-    margin-inline-end: -135px; } }
+    margin-inline-end: -135px; }
+  .copyright {
+    display: flex;
+    justify-content: space-between; } }

@@ -7,7 +7,7 @@ footer {
   padding: $common_padding;
 }
 
-footer > h2 a {
+footer > div h2 a {
   font-family: dmSerifDisplayRegular;
   font-size: $default_font_size + 8;
   line-height: 32px;
@@ -15,7 +15,7 @@ footer > h2 a {
   text-transform: uppercase;
 }
 
-footer > p {
+footer > div > div >  p, .copyright {
   font-size: $default_font_size;
   opacity: .5;
 }
@@ -49,6 +49,10 @@ footer > p {
 .links_site .active > a {
   opacity: 1;
   padding:  $common_padding 0px;
+}
+
+.footer__row .links_site {
+  margin-inline-end: 20rem;
 }
 
 .poster_profile img {
@@ -85,8 +89,27 @@ footer > p {
     padding-inline-start: 135px;
     padding-inline-end: 135px;
   }
+  .footer__row {
+    display: flex;
+    justify-content: space-between;
+    padding-block-start: 56px;
+  }
+  .footer__row h3 {
+    display: none;
+  }
+  .footer__row > div {
+    max-width: 270px
+  }
+
+  .posts {
+    margin-block-start: 22px;
+  }
   .border--bottom {
     margin-inline-start: -135px;
     margin-inline-end: -135px;
+  }
+  .copyright {
+    display: flex;
+    justify-content: space-between;
   }
 }

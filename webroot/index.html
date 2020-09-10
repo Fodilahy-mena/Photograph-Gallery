@@ -198,94 +198,100 @@
   </nav>
 
   <footer>
-    <h2><a href="/">Photograf</a></h2>
-    <p>The personal website of Jesse McJessesen, professional photographer.</p>
-    <h3 class="a11y">Find us on the web with:</h3>
-    <nav>
-      <ul class="links_social footer--links">
-        <li>
-          <a href="/facebook.com/logo" class="icon icon_facebook">Facebook: Logo</a>
+    <div class="footer__row">
+      <div>
+        <h2><a href="/">Photograf</a></h2>
+        <p>The personal website of Jesse McJessesen, professional photographer.</p>
+        <h3 class="a11y">Find us on the web with:</h3>
+        <nav>
+          <ul class="links_social footer--links">
+            <li>
+              <a href="/facebook.com/logo" class="icon icon_facebook">Facebook: Logo</a>
+            </li>
+            <li>
+              <a href="/twitter.com/logo" class="icon icon_twitter">Twitter: @Logo</a>
+            </li>
+            <li>
+              <a href="/instagram.com/logo" class="icon icon_instagram">Instagram: Logo</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <h3 class="a11y">Our websites</h3>
+      <ul class="links_site">
+        <li class="active">
+          <a href="/">Home</a>
         </li>
         <li>
-          <a href="/twitter.com/logo" class="icon icon_twitter">Twitter: @Logo</a>
+          <a class="about" href="/about">About</a>
         </li>
         <li>
-          <a href="/instagram.com/logo" class="icon icon_instagram">Instagram: Logo</a>
+          <a class="protfolio" href="/portfolio">Portfolio</a>
+        </li>
+        <li>
+          <a class="blog" href="/blog">Blog</a>
+        </li>
+        <li>
+          <a class="contact" href="/contact">Contact</a>
         </li>
       </ul>
-    </nav>
 
-    <h3 class="a11y">Our websites</h3>
-    <ul class="links_site">
-      <li class="active">
-        <a href="/">Home</a>
-      </li>
-      <li>
-        <a class="about" href="/about">About</a>
-      </li>
-      <li>
-        <a class="protfolio" href="/portfolio">Portfolio</a>
-      </li>
-      <li>
-        <a class="blog" href="/blog">Blog</a>
-      </li>
-      <li>
-        <a class="contact" href="/contact">Contact</a>
-      </li>
-    </ul>
+      <nav class="posts">
+        <ul class="posts__comments">
+          <li>
+            <p class="poster_profile">
+              <a href="/profile">
+                <img class="image_profile" src="./images/woman_xs.jpg"
+                width="70"
+                height="48"
+                tabindex="0"
+                title="image title" alt="profile photo">
+              </a>
+            </p>
 
-    <nav class="posts">
-      <ul class="posts__comments">
-        <li>
-          <p class="poster_profile">
-            <a href="/profile">
-              <img class="image_profile" src="./images/woman_xs.jpg"
-              width="70"
-              height="48"
-              tabindex="0"
-              title="image title" alt="profile photo">
-            </a>
-          </p>
+            <div  class="comment">
+              <span>
+                Rust, pumpkin, tans, and spices.
+              </span>
+              <br>
+              <span>
+                July 15, 2019
+              </span>
+            </div>
+          </li>
 
-          <div  class="comment">
-            <span>
-              Rust, pumpkin, tans, and spices.
-            </span>
-            <br>
-            <span>
-              July 15, 2019
-            </span>
-          </div>
-        </li>
-
-        <li>
-          <p class="poster_profile">
-            <a href="/profile">
-              <img class="image_profile" src="./images/arches_sm.jpg"
-              width="70"
-              height="48"
-              tabindex="0"
-              title="image title" 
-              alt="profile photo">
-            </a>
-          </p>
-            
-          <div  class="comment">
-            <span>
-              Experiencing Japan
-            </span>
-            <br>
-            <span>
-              July 10, 2019
-            </span>
-          </div>
-        </li>
-      </ul>
-    </nav>
+          <li>
+            <p class="poster_profile">
+              <a href="/profile">
+                <img class="image_profile" src="./images/arches_sm.jpg"
+                width="70"
+                height="48"
+                tabindex="0"
+                title="image title" 
+                alt="profile photo">
+              </a>
+            </p>
+              
+            <div  class="comment">
+              <span>
+                Experiencing Japan
+              </span>
+              <br>
+              <span>
+                July 10, 2019
+              </span>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
     <div class="border--bottom"></div>
-    <p>Created by Laaqiq, modified by Onja</p>
-    <p class="copyright">&copy; PHOTOGRAF, 2020. All rights reserved.</p>
+    <div class="copyright">
+      <p>Created by Laaqiq, modified by Onja</p>
+      <p class="copyright">&copy; PHOTOGRAF, 2020. All rights reserved.</p>
+    </div>
   </footer>
 
 </body>
