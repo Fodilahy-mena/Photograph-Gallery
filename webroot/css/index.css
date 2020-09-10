@@ -344,18 +344,15 @@ td > span {
   margin-block-start: 8px; }
 
 .submit {
+  text-decoration: none;
+  display: inline-block;
   width: 170px;
-  height: 48px;
+  height: 50px;
+  border-radius: 5px;
   background-color: #434CCC;
-  padding-inline-start: 0;
-  padding-inline-end: 0; }
-
-.submit button {
   border: 0;
-  top: 8px;
-  position: relative;
+  padding: 14px 47px;
   color: #FFFFFF;
-  background-color: inherit;
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
@@ -373,7 +370,14 @@ td > span {
     min-width: 382px;
     margin-inline-end: auto; }
   .section__updates > form {
-    display: flex; } }
+    display: flex;
+    position: relative;
+    top: 50px; }
+  .submit {
+    position: relative;
+    top: 26px; }
+  .email {
+    margin-inline-end: 4rem; } }
 
 footer {
   background-color: #FFFFFF;

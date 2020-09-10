@@ -57,22 +57,17 @@
   margin-block-start: 8px;
 }
 
-.submit {
-  width: 170px;
-  height: 48px;
-  background-color: $header_bg;
-  padding-inline-start: 0;
-  padding-inline-end: 0;
-}
 
-.submit button {
-  // margin-block-start: 3px;
-  // margin-block-end: 3px;
+.submit {	
+  text-decoration: none;	
+  display: inline-block;	
+  width: 170px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: $header_bg;
   border: 0;
-  top: 8px;
-  position: relative;
+  padding: 14px 47px;
   color:$link_colour;
-  background-color: inherit;
   font-weight: bold;
   font-size: $default_font_size;
   line-height: 24px;
@@ -98,6 +93,17 @@
 
   .section__updates > form {
     display: flex;
+    position: relative;
+    top: 50px;
+  }
+
+  .submit {
+    position: relative;
+    top: 26px;
+  }
+
+  .email {
+    margin-inline-end: 4rem;
   }
 
 
