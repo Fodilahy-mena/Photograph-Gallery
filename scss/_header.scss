@@ -6,19 +6,14 @@ body > header {
   padding: $common_padding + 7;
 }
 
-@media (min-width: 1440px) {
-  body > header {
-    padding-inline-start: 135px;
-    padding-inline-end: 135px;
-  }
-}
-
 body > header h1 {
   margin: 0;
 }
 
 body > header h1 > a {
   text-decoration: none;
+  font-size: 24px;
+  line-height: 32px;
   color: $link_colour;
   text-transform: uppercase;
 }
@@ -26,3 +21,15 @@ body > header h1 > a {
 .a11y {
   opacity: 0;
 }
+
+@media (min-width: 1440px) {
+  body > header {
+    padding-inline-start: var(--desktop--padding);
+    padding-inline-end: var(--desktop--padding);
+  }
+  body > header h1 > a {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+

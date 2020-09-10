@@ -27,7 +27,7 @@ a {
 
 @media (min-width: 1440px) {
   main {
-    padding-inline-start: 135px;
-    padding-inline-end: 135px;
+    padding-inline-start: var(--desktop--padding);
+    padding-inline-end: var(--desktop--padding);
   }
 }

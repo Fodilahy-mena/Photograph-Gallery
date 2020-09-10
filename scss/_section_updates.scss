@@ -80,8 +80,8 @@
   .section__updates {
     margin-inline-start: -135px;
     margin-inline-end: -135px;
-    padding-inline-start: 135px;
-    padding-inline-end: 135px;
+    padding-inline-start: var(--desktop--padding);
+    padding-inline-end: var(--desktop--padding);
     display: flex;
   }
 
