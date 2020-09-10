@@ -65,12 +65,6 @@
 }
 
 .samples__slides > div {
-  // display: grid;
-  // grid-template-columns: repeat(3, 1fr);
-  // grid-gap: 16px;
-  // display: flex;
-  // overflow-x: scroll;
-  // overflow-y: hidden;
   overflow-x: hidden;
   margin-bottom: -17px;
   overflow-y: hidden;
@@ -136,6 +130,16 @@
   }
   .samples__slides img:last-child {
     margin-inline-end: 0;
+  }
+
+  .perspective > header > h2 {
+    font-size: 72px;
+    line-height: 80px;
+  }
+
+  .perspective h3 {
+    font-size: 52px;
+    line-height: 64px;
   }
 }
 

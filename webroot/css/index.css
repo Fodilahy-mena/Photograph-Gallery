@@ -286,7 +286,13 @@ body > header h1 > a {
   .samples__slides img:nth-of-type(1) {
     margin-inline-start: 0; }
   .samples__slides img:last-child {
-    margin-inline-end: 0; } }
+    margin-inline-end: 0; }
+  .perspective > header > h2 {
+    font-size: 72px;
+    line-height: 80px; }
+  .perspective h3 {
+    font-size: 52px;
+    line-height: 64px; } }
 
 :root {
   --desktop--padding: 135px; }
@@ -391,6 +397,9 @@ td > span {
     padding-inline-start: var(--desktop--padding);
     padding-inline-end: var(--desktop--padding);
     display: flex; }
+  .section__updates h2 {
+    font-size: 52px;
+    line-height: 64px; }
   .section__updates > header {
     max-width: 382px;
     min-width: 382px;

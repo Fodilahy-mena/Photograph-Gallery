@@ -84,7 +84,10 @@
     padding-inline-end: var(--desktop--padding);
     display: flex;
   }
-
+  .section__updates h2 {
+    font-size: 52px;
+    line-height: 64px;
+  }
   .section__updates > header {
     max-width: 382px;
     min-width: 382px;
