@@ -40,7 +40,7 @@
 }
 
 .email {
-  width: 346px;
+  width: 326px;
   height: 76px;
   margin-bottom: $common_padding;
   text-align: left;
@@ -48,26 +48,29 @@
 }
 
 .email input {
-  width: 326px;
-  padding-block-start: 13px;
-  padding-block-end: 13px;
-  // padding-inline-start: $common_padding;
+  width: 94%;
+  height: 48px;
   border-radius: 5px;
+  padding-inline-end: 9px;
+  padding-inline-start: 9px;
   border: 1px solid #DADADA;
   margin-block-start: 8px;
 }
 
 .submit {
   width: 170px;
+  height: 48px;
   background-color: $header_bg;
   padding-inline-start: 0;
   padding-inline-end: 0;
 }
 
 .submit button {
-  margin-block-start: 3px;
-  margin-block-end: 3px;
+  // margin-block-start: 3px;
+  // margin-block-end: 3px;
   border: 0;
+  top: 8px;
+  position: relative;
   color:$link_colour;
   background-color: inherit;
   font-weight: bold;
@@ -84,5 +87,18 @@
     margin-inline-end: -135px;
     padding-inline-start: 135px;
     padding-inline-end: 135px;
+    display: flex;
   }
+
+  .section__updates > header {
+    max-width: 382px;
+    min-width: 382px;
+    margin-inline-end: auto;
+  }
+
+  .section__updates > form {
+    display: flex;
+  }
+
+
 }
