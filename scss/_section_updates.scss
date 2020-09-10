@@ -40,19 +40,20 @@
 }
 
 .email {
-  width: 326px;
+  width: 367px;
   height: 76px;
+  margin-inline-end: 0;
   margin-bottom: $common_padding;
   text-align: left;
   padding: 0;
 }
 
 .email input {
-  width: 94%;
+  width: 90%;
   height: 48px;
   border-radius: 5px;
-  padding-inline-end: 9px;
-  padding-inline-start: 9px;
+  padding-inline-end: 16px;
+  padding-inline-start: 16px;
   border: 1px solid #DADADA;
   margin-block-start: 8px;
 }
