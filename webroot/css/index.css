@@ -221,7 +221,8 @@ body > header h1 > a {
   padding-block-start: 16px;
   display: grid;
   grid-template-rows: 1fr auto;
-  grid-gap: 12px; }
+  grid-gap: 12px;
+  margin-inline-end: -16px; }
 
 .perspective__samples img {
   border-radius: 5px; }

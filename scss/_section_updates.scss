@@ -52,8 +52,8 @@
   width: 90%;
   height: 48px;
   border-radius: 5px;
-  padding-inline-end: 16px;
-  padding-inline-start: 16px;
+  padding-inline-end: $common_padding;
+  padding-inline-start: $common_padding;
   border: 1px solid #DADADA;
   margin-block-start: 8px;
 }
