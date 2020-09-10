@@ -108,6 +108,12 @@
 }
 
 @media (min-width: 1440px) {
+  .samples__visible {
+    padding-inline-end: 0;
+  }
+  .samples__slides {
+    overflow: visible;
+  }
   .mineral__desire {
     max-width: 570px;
     margin: auto;
@@ -127,6 +133,9 @@
 
   .samples__slides img:nth-of-type(1) {
     margin-inline-start: 0;
+  }
+  .samples__slides img:last-child {
+    margin-inline-end: 0;
   }
 }
 

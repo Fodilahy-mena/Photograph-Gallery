@@ -248,6 +248,10 @@ body > header h1 > a {
   opacity: .5; }
 
 @media (min-width: 1440px) {
+  .samples__visible {
+    padding-inline-end: 0; }
+  .samples__slides {
+    overflow: visible; }
   .mineral__desire {
     max-width: 570px;
     margin: auto;
@@ -260,7 +264,9 @@ body > header h1 > a {
     margin: auto;
     min-width: 137px; }
   .samples__slides img:nth-of-type(1) {
-    margin-inline-start: 0; } }
+    margin-inline-start: 0; }
+  .samples__slides img:last-child {
+    margin-inline-end: 0; } }
 
 .mineral__update {
   padding-block-start: 92px; }
