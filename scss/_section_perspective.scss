@@ -47,8 +47,6 @@
   grid-gap: 12px;
 }
 .perspective__samples img {
-  max-width: 100%;
-  min-width: 100%;
   border-radius: 5px;
 }
 .samples__visible {
@@ -66,11 +64,13 @@
 
 .samples__slides > div {
   overflow-x: hidden;
-  margin-bottom: -17px;
+  // margin-bottom: -17px;
   overflow-y: hidden;
 }
 .samples__slides > div > div {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  column-gap: $common_padding;
 }
 .samples__slides div * {
   overflow-x: auto;
@@ -78,9 +78,11 @@
   cursor:pointer
 }
 .samples__slides img {
-  margin-inline-end: $common_padding - 5;
   max-width: 137px;
   min-width: 137px;
+}
+.image-container::-webkit-scrollbar {
+  display: none;
 }
 
 // About the second article in the perspective section
@@ -101,6 +103,9 @@
   opacity: .5;
 }
 
+
+// On desktop
+
 @media (min-width: 1440px) {
   .samples__visible {
     padding-inline-end: 0;
@@ -117,12 +122,6 @@
 
   .mineral {
     display: flex;
-  }
-
-  .samples__slides img {
-    max-width: 137px;
-    margin: auto;
-    min-width: 137px;
   }
 
   .samples__slides img:nth-of-type(1) {
