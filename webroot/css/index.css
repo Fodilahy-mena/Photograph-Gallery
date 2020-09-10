@@ -201,7 +201,7 @@ body > header h1 > a {
   background-image: url(../images/icon_arrow_left.svg);
   background-size: 16px;
   background-repeat: no-repeat;
-  top: 6.8rem; }
+  top: 7.3rem; }
 
 .perspective > header > h2 {
   font-family: dmSerifDisplayRegular;
@@ -292,7 +292,9 @@ body > header h1 > a {
     line-height: 80px; }
   .perspective h3 {
     font-size: 52px;
-    line-height: 64px; } }
+    line-height: 64px; }
+  .perspective header > a::before {
+    top: 8.2rem; } }
 
 :root {
   --desktop--padding: 135px; }
