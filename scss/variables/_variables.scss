@@ -27,7 +27,13 @@ $woff: 'woff';
 $default_font_size: 16px;
 $common_padding: 16px;
 
+
+// custom properties
 :root {
-  --desktop--padding: 135px;
+  --desktop-padding: 135px;
+  --h1-font-size: 24px;
+  --h1-line-height: 32px;
+  --header-section-width: 382px;
+  --slide-img-width: 137px;
 }
 

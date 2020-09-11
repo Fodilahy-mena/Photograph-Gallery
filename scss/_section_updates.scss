@@ -2,7 +2,7 @@
 
 
 .section__updates {
-  background-color: #FFDD78;
+  background-color: $second_bg;
   padding:  $common_padding;
   margin: -15px;
   padding-block-start: 63px;
@@ -11,7 +11,7 @@
 .section__updates h2 {
   font-family: dmSerifDisplayRegular;
   font-weight: normal;
-  font-size: 40px;
+  font-size: $default_font_size + 24;
   line-height: 48px;
 }
 
@@ -81,8 +81,8 @@
   .section__updates {
     margin-inline-start: -135px;
     margin-inline-end: -135px;
-    padding-inline-start: var(--desktop--padding);
-    padding-inline-end: var(--desktop--padding);
+    padding-inline-start: var(--desktop-padding);
+    padding-inline-end: var(--desktop-padding);
     display: flex;
   }
   .section__updates h2 {
@@ -90,8 +90,8 @@
     line-height: 64px;
   }
   .section__updates > header {
-    max-width: 382px;
-    min-width: 382px;
+    max-width: var(--header-section-width);
+    min-width: var(--header-section-width);
     margin-inline-end: auto;
   }
 

@@ -7,7 +7,7 @@ html {
 }
 body {
   margin: 0;
-  background-color: #F6F8F9;
+  background-color: $body_bg;
   color: $colour;
   overflow-x: hidden;
 }
@@ -27,7 +27,7 @@ a {
 
 @media (min-width: 1440px) {
   main {
-    padding-inline-start: var(--desktop--padding);
-    padding-inline-end: var(--desktop--padding);
+    padding-inline-start: var(--desktop-padding);
+    padding-inline-end: var(--desktop-padding);
   }
 }

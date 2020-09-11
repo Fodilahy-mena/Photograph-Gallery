@@ -12,8 +12,8 @@ body > header h1 {
 
 body > header h1 > a {
   text-decoration: none;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: var(--h1-font-size);
+  line-height: var(--h1-line-height);
   color: $link_colour;
   text-transform: uppercase;
 }
@@ -24,8 +24,8 @@ body > header h1 > a {
 
 @media (min-width: 1440px) {
   body > header {
-    padding-inline-start: var(--desktop--padding);
-    padding-inline-end: var(--desktop--padding);
+    padding-inline-start: var(--desktop-padding);
+    padding-inline-end: var(--desktop-padding);
   }
   body > header h1 > a {
     font-size: 40px;

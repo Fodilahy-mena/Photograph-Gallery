@@ -86,8 +86,8 @@ footer > div > div >  p, .copyright {
 
 @media (min-width: 1440px) {
   footer {
-    padding-inline-start: var(--desktop--padding);
-    padding-inline-end: var(--desktop--padding);
+    padding-inline-start: var(--desktop-padding);
+    padding-inline-end: var(--desktop-padding);
   }
   .footer__row {
     display: flex;

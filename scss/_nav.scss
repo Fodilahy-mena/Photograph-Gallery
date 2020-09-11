@@ -142,7 +142,7 @@ body > header label {
   background-color: unset;
   display: flex;
   flex-direction: row;
-  margin-inline-end: var(--desktop--padding);
+  margin-inline-end: var(--desktop-padding);
 }
 .navigation > ul a {
   color: $link_colour;
