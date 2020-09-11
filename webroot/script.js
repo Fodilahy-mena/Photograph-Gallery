@@ -57,6 +57,7 @@ images.forEach(image => {
       }
   });
   
+  
 });
 
 }
