@@ -16,12 +16,12 @@ function Slide(slide) {
   const nextButton = activeImg.querySelector('.next');
   let currentImage;
 
-    // event listeners to be bound
+  // event listeners to be bound
   window.addEventListener('keyup', handleKeyUp);
   nextButton.addEventListener('click', showNextImage);
   prevButton.addEventListener('click', showPrevImage);
 
-
+  // Enable the use of Arrow keys left and right as the same use of previous button and next button
   function handleKeyUp(e) {
     if(e.key === "ArrowLeft") return showNextImage();
     if(e.key === "ArrowRight") return showPrevImage();
@@ -50,9 +50,8 @@ images.forEach(image => {
 });
 
 images.forEach(image => {
-  //
   image.addEventListener('keyup', e => {
-      //
+      
       if(e.key === 'Enter') {
           showImage(e.currentTarget);
       }
@@ -62,5 +61,4 @@ images.forEach(image => {
 
 }
 
-// window.addEventListener('DOMContentLoaded',);
 const imgConatiner = Slide(document.querySelector('.image-container'));
