@@ -337,10 +337,27 @@ body > header h1 > a {
 
 .samples__visible {
   display: grid;
-  grid-template-columns: 50px 1fr 50px; }
+  grid-template-columns: 0px 1fr 0px; }
 
 .samples__visible figure {
   margin: 0; }
+
+.samples__visible button {
+  z-index: 3;
+  background-color: transparent;
+  border: 0;
+  margin-block-end: 7px;
+  color: #FFFFFF;
+  border-radius: 5px; }
+
+.prev {
+  padding-inline-end: 2rem; }
+
+.next {
+  position: relative;
+  right: 2.5rem;
+  padding-inline-end: 25px;
+  padding-inline-start: 16px; }
 
 :root {
   --desktop--padding: 135px; }
