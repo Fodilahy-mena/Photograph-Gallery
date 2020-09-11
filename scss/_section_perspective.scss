@@ -159,6 +159,17 @@
   }
 }
 
+// Style when using js
+
+.samples__visible {
+	display: grid;
+	grid-template-columns: 50px 1fr 50px;
+}
+
+.samples__visible figure {
+  margin: 0;
+}
+
 
 
 
