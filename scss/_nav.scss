@@ -59,19 +59,12 @@ body > [type="checkbox"]:checked ~ header label {
   position: relative;
   top: 8px;
 }
-@media (min-width: 1440px) {
-.navigation > label, body > header > label {
-  top: 16px;
-}
-}
-.navigation > label {
-  opacity: 0;
-}
 
 .navigation > ul a {
   text-transform: capitalize;
   @include anchor-site;
   padding: $common_padding;
+  color: $colour;
 }
 .navigation > ul > li a:hover {
   opacity: 1;
@@ -115,6 +108,47 @@ body > [type="checkbox"]:checked ~ header label {
   margin: 0 -0.5rem;
 }
 
+.navigation > label {
+  opacity: 0;
+}
+
+@media (min-width: 1440px) {
+
+body > header label {
+  display: none;
+}
+.navigation {
+  padding: 0;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: auto;
+  max-width: 100%;
+  min-width: 100%;
+  height: auto;
+  box-shadow: none;
+  transform: none;
+  transition: none;
+  margin: auto;
+}
+.navigation label {
+  display: none;
+}
+
+.navigation > ul {
+  justify-content: flex-end;
+  padding-inline-start: 0;
+  background-color: unset;
+  display: flex;
+  flex-direction: row;
+  margin-inline-end: var(--desktop--padding);
+}
+.navigation > ul a {
+  color: $link_colour;
+  opacity: 1;
+}
+}
 
 
 
