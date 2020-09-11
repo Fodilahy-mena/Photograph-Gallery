@@ -256,7 +256,16 @@ body > header h1 > a {
   max-width: 137px;
   min-width: 137px; }
 
+.image-container {
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */ }
+
 .image-container::-webkit-scrollbar {
+  display: none; }
+
+.image-container::-moz-scrollbar {
   display: none; }
 
 .perspective h3 {
@@ -291,7 +300,8 @@ body > header h1 > a {
     margin-inline-end: 0; }
   .perspective > header > h2 {
     font-size: 72px;
-    line-height: 80px; }
+    line-height: 80px;
+    max-width: 457px; }
   .perspective h3 {
     font-size: 52px;
     line-height: 64px; }

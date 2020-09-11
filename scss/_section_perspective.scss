@@ -82,9 +82,21 @@
   max-width: 137px;
   min-width: 137px;
 }
+
+// To make sure that the scrollbar is invisible with most browsers
+// **************************
+.image-container {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
 .image-container::-webkit-scrollbar {
   display: none;
 }
+
+.image-container::-moz-scrollbar {
+    display: none; 
+}
+// ***************************
 
 // About the second article in the perspective section
 
@@ -131,10 +143,11 @@
   .samples__slides img:last-child {
     margin-inline-end: 0;
   }
-
+  
   .perspective > header > h2 {
     font-size: 72px;
     line-height: 80px;
+    max-width: 457px;
   }
 
   .perspective h3 {
