@@ -337,6 +337,9 @@ body > header h1 > a {
   line-height: 24px;
   opacity: .5; }
 
+.article__heading {
+  display: none; }
+
 @media (min-width: 1440px) {
   .samples__visible {
     padding-inline-end: 0; }
