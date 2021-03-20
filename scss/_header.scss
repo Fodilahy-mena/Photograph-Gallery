@@ -1,19 +1,29 @@
 @import "../scss/variables/variables";
 body > header {
   background-color: $header_bg;
+  padding: $common_padding + 7;
+  overflow-y: hidden;
+}
+
+body > header > div {
   display: flex;
   justify-content: space-between;
-  padding: $common_padding + 7;
 }
 
 body > header h1 {
   margin: 0;
+  position: relative;
+  cursor: pointer;
+  z-index: 5;
 }
 
 body > header h1 > a {
+  font-family: dmSerifDisplayRegular;
   text-decoration: none;
   font-size: var(--h1-font-size);
   line-height: var(--h1-line-height);
+  font-style: normal;
+  font-weight: normal;
   color: $link_colour;
   text-transform: uppercase;
 }
@@ -22,10 +32,15 @@ body > header h1 > a {
   opacity: 0;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $min_width_desktop) {
   body > header {
-    padding-inline-start: var(--desktop-padding);
-    padding-inline-end: var(--desktop-padding);
+    padding-inline-start: unset;
+    padding-inline-end: unset;
+  }
+  body > header > div {
+    max-width: $content_width_desktop;
+    min-width: $content_width_desktop;
+    margin: auto;
   }
   body > header h1 > a {
     font-size: 40px;

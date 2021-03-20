@@ -3,8 +3,6 @@
 
 .section__updates {
   background-color: $second_bg;
-  padding:  $common_padding;
-  margin: -15px;
   padding-block-start: 63px;
   padding-block-end: 53px;
 }
@@ -15,7 +13,13 @@
   line-height: 48px;
 }
 
-.section__updates > header > span {
+.section__updates > div {
+  max-width: $content_width_mobile;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.section__updates header > span {
   font-weight: normal;
   font-size: $default_font_size;
   line-height: 24px;
@@ -49,7 +53,7 @@
 }
 
 .email input {
-  width: 90%;
+  width: 80%;
   height: 48px;
   border-radius: 5px;
   padding-inline-end: $common_padding;
@@ -73,29 +77,42 @@
   font-size: $default_font_size;
   line-height: 24px;
   text-align: center;
+  cursor: pointer;
 }
 
 // On desktop view 
 
-@media (min-width: 1440px) {
+@media (min-width: $min_width_desktop) {
   .section__updates {
-    margin-inline-start: -135px;
-    margin-inline-end: -135px;
-    padding-inline-start: var(--desktop-padding);
-    padding-inline-end: var(--desktop-padding);
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: -16px;
+    padding-inline-start: unset;
+    padding-inline-end: unset;
+  }
+
+  .section__updates > div {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: $content_width_desktop;
+    min-width: $content_width_desktop;
+    margin: auto;
   }
   .section__updates h2 {
     font-size: 52px;
     line-height: 64px;
   }
-  .section__updates > header {
+  .section__updates header {
     max-width: var(--header-section-width);
     min-width: var(--header-section-width);
-    margin-inline-end: auto;
+    margin-inline-end: 15%;
   }
+  // .subscribe__type {
+  //   margin-inline-end: unset;
+  // }
 
-  .section__updates > form {
+  .section__updates form {
     display: flex;
     position: relative;
     top: 50px;
@@ -104,10 +121,6 @@
   .submit {
     position: relative;
     top: 26px;
-  }
-
-  .email {
-    margin-inline-end: 4rem;
   }
 
 

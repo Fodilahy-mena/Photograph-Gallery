@@ -52,7 +52,7 @@ footer > div > div >  p, .copyright {
 }
 
 .footer__row .links_site {
-  margin-inline-end: 20rem;
+  margin-inline-end: 27%;
 }
 
 .poster_profile img {
@@ -84,21 +84,25 @@ footer > div > div >  p, .copyright {
 
 // On desktop view 
 
-@media (min-width: 1440px) {
+@media (min-width: $min_width_desktop) {
   footer {
-    padding-inline-start: var(--desktop-padding);
-    padding-inline-end: var(--desktop-padding);
+    padding-inline-start: unset;
+    padding-inline-end: unset;
   }
   .footer__row {
     display: flex;
-    justify-content: space-between;
     padding-block-start: 56px;
+    width: 100%;
+    max-width: $content_width_desktop;
+    min-width: $content_width_desktop;
+    margin: auto;
   }
   .footer__row h3 {
     display: none;
   }
   .footer__row > div {
-    max-width: 270px
+    max-width: 270px;
+    margin-inline-end: 10%;
   }
 
   .posts {
@@ -111,5 +115,7 @@ footer > div > div >  p, .copyright {
   .copyright {
     display: flex;
     justify-content: space-between;
+    max-width: $content_width_desktop;
+    margin: auto;
   }
 }

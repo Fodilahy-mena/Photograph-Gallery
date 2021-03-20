@@ -12,22 +12,12 @@ body {
   overflow-x: hidden;
 }
 
-main {
-  padding: $common_padding - 1;
+body > header, section, footer {
+  overflow-x: hidden;
 }
-
 a {
   text-decoration: none;
-}
-.navigation .active > a {
-  opacity: 1;
 }
 
 // On desktop view 
 
-@media (min-width: 1440px) {
-  main {
-    padding-inline-start: var(--desktop-padding);
-    padding-inline-end: var(--desktop-padding);
-  }
-}

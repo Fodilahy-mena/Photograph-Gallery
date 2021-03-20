@@ -26,7 +26,9 @@ $woff2: 'woff2';
 $woff: 'woff';
 $default_font_size: 16px;
 $common_padding: 16px;
-
+$min_width_desktop: 1114px;
+$content_width_mobile: 670px;
+$content_width_desktop: 1114px;
 
 // custom properties
 :root {

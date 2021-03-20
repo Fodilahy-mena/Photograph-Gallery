@@ -3,28 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Frontend finals</title>
+  <title>Photograf</title>
   <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
   <input type="checkbox" id="menu_checkbox">
-
+  
   <header>
-    <h1>
-        <a href="/home">
-          Photograf
-        </a>
-    </h1>
-    <label for="menu_checkbox" class="icon_menu">
-        <span class="a11y">Open the menu</span>
-    </label>
+    <div>
+      <h1>
+          <a href="#">
+            Photograf
+          </a>
+      </h1>
+      <label for="menu_checkbox" class="icon_menu">
+          <span class="a11y">Open the menu</span>
+      </label>
+    </div>
   </header>
 
   <main>
-    <section class="perspective">
+    <section class="section__perspective">
       <header>
-        <a href="/home_portfolio">
-          Back to portfolio
+        <a href="#portfolio">
+            <svg width="14" height="8" view-box="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M0.0389471 4.19464C0.0136567 4.13343 0 4.06766 0 3.99987C0 3.93259 0.0136567 3.86682 0.0389471 3.80561C0.0647433 3.74389 0.101668 3.68824 0.148202 3.6422L3.64181 0.147975C3.83958 -0.0493249 4.15925 -0.0493249 4.35703 0.147975C4.5548 0.345781 4.5548 0.666013 4.35703 0.863313L1.72683 3.49398H12.9942C13.2739 3.49398 13.5 3.72062 13.5 3.99987C13.5 4.27963 13.2739 4.50577 12.9942 4.50577H1.72683L4.35703 7.13643C4.5548 7.33424 4.5548 7.65447 4.35703 7.85177C4.25839 7.95093 4.12891 8 3.99942 8C3.86993 8 3.74045 7.95093 3.64181 7.85177L0.148202 4.35805C0.101668 4.31151 0.0647433 4.25636 0.0389471 4.19464" fill="black"/>
+            </svg>
+          <span>Back to portfolio</span>
         </a>
         <h2>Beauty is seen through a lens</h2>
         <p>
@@ -35,42 +40,50 @@
         <h3 class="article__heading">Image gallery</h3>
         <div class="perspective__samples ative--img">
           <div class="samples__visible">
-            <button title="this is a button to slide to the previous image" aria-label="Previous Photo Slides" class="prev">←</button>
+            <button title="this is a button to slide to the previous image" aria-label="Previous Photo Slides" class="prev"><i>←</i></button>
               <figure>
-                <img
+                <img class="image_slide"
                 src="./images/rock_carvings_lg.jpg"
                 alt="captured carvings"
                 tabindex="0"
                 title="captured carvings"
                 />
+                <img class="image_slide" src="./images/stairs_lg.jpg" alt="a photo of stairs"/>
+                <img class="image_slide" src="./images/ripples_lg.jpg" alt="big ripples image"/>
+                <img class="image_slide" src="./images/dunes_lg.jpg" alt="nice photo of dunes"/>
+                <img class="image_slide" src="./images/arches_lg.jpg" alt="a good passage"/>
+                <img class="image_slide" src="./images/car_lg.jpg" alt="image of a car"/>
+                <img class="image_slide" src="./images/sunset_lg.jpg" alt="sunset"/>
+                <img class="image_slide" src="./images/canyon_lg.jpg" alt="canion's image"/>
               </figure>
-            <button title="this is a button to slide to the next image" class="next" aria-label="Next Photo Slides">→</button>
+                
+            <button title="this is a button to slide to the next image" class="next" aria-label="Next Photo Slides"><i>→</i></button>
           </div>
           <div class="samples__slides">
             <div>
               <div class="image-container">
                 <img
+                  class="image_slider active"
                   src="./images/rock_carvings_sm.jpg"
                   alt="captured carvings"
                   tabindex="0"
                   title="captured carvings"
-                  class="img active"
                 />
 
                 <img
+                  class="image_slider"
                   src="./images/stairs_sm.jpg"
                   alt="see some beautiful stairs"
                   tabindex="0"
                   title="see some beautiful stairs"
-                  class="img"
                 />
 
                 <img
+                  class="image_slider"
                   src="./images/ripples_sm.jpg"
                   alt="amaizing sand ripples"
                   tabindex="0"
                   title="amaizing sand ripples"
-                  class="img"
                 />
 
                 <img
@@ -78,35 +91,35 @@
                   alt="try to capture sand dunes desert"
                   tabindex="0"
                   title="try to capture sand dunes desert"
-                  class="img"
+                  class="image_slider"
                 />
                 <img
                   src="./images/arches_sm.jpg"
                   alt="arches taken perspectively"
                   tabindex="0"
                   title="arches taken perspectively"
-                  class="img"
+                  class="image_slider"
                 />
                 <img
                   src="./images/car_sm.jpg"
                   alt="rolling car wheel"
                   tabindex="0"
                   title="rolling car wheel"
-                  class="img"
+                  class="image_slider"
                 />
                 <img
                   src="./images/sunset_sm.jpg"
                   alt="the most common sunset capture"
                   tabindex="0"
                   title="the most common sunset capture"
-                  class="img"
+                  class="image_slider"
                 />
                 <img
                   src="./images/canyon_sm.jpg"
                   alt="the largest and deepest canyon you could ever find"
                   tabindex="0"
                   title="the largest and deepest canyon you could ever find"
-                  class="img"
+                  class="image_slider"
                 />
               </div>
             </div>
@@ -154,36 +167,38 @@
             Deep in the deserts of Morroco, lies a dried-up valley, featuring some of the most exquisite rock formations, carved millions of years ago.
           </p>
           <p>
-            To truly experience these beautiful formations, one has to visit them in person. I hope my photos have managed to capture the sheer size – gravitas even – and spellbinding nature of these eroded walls.
+            To truly experience these beautiful formations, one has to visit them in person. I hope my photos have managed to capture the sheer size – <i>gravitas even</i> – and spellbinding nature of these eroded walls.
           </p>
           <nav>
             <ul class="links_social">
               <li>
-                <a href="/facebook.com/logo" class="icon icon_facebook">Facebook: Logo</a>
+                <a href="https://facebook.com/logo" class="icon icon_facebook">Facebook: Logo</a>
               </li>
               <li>
-                <a href="/twitter.com/logo" class="icon icon_twitter">Twitter: @Logo</a>
+                <a href="https://twitter.com/logo" class="icon icon_twitter">Twitter: @Logo</a>
               </li>
               <li>
-                <a href="/instagram.com/logo" class="icon icon_instagram">Instagram: Logo</a>
+                <a href="https://instagram.com/logo" class="icon icon_instagram">Instagram: Logo</a>
               </li>
             </ul>
           </nav>
         </div>
       </article>
     </section>
-    <section class="section__updates">
-      <header>
-        <span>Latest</span>
-        <h2>Stay up-to-date with my updates</h2>
-      </header>
-      <form action="/subscribe" method="GET">
-        <div class="subscribe__type email">
-            <label>Your email address</label><br>
-            <input type="email" placeholder="e.g. jesse@gmail.com">
-        </div>
-          <button class="submit" type="submit">Subscribe</button>
-      </form>
+    <section id="contact" class="section__updates">
+      <div>
+        <header>
+          <span>Latest</span>
+          <h2>Stay up-to-date with my updates</h2>
+        </header>
+        <form action="/subscribe" method="GET">
+          <div class="subscribe__type email">
+              <label>Your email address</label><br>
+              <input type="email" placeholder="e.g. jesse@gmail.com">
+          </div>
+            <button class="submit" type="submit">Subscribe</button>
+        </form>
+      </div>
     </section>
   </main>
 
@@ -193,19 +208,19 @@
     </label>
     <ul>
       <li class="active">
-        <a href="/">Home</a>
+        <a href="#">Home</a>
       </li>
       <li>
-        <a class="about" href="/about">About</a>
+        <a class="about" href="#about">About</a>
       </li>
       <li>
-        <a class="protfolio" href="/portfolio">Portfolio</a>
+        <a class="protfolio" href="#portfolio">Portfolio</a>
       </li>
       <li>
-        <a class="blog" href="/blog">Blog</a>
+        <a class="blog" href="#blog">Blog</a>
       </li>
       <li>
-        <a class="contact" href="/contact">Contact</a>
+        <a class="contact" href="#contact">Contact</a>
       </li>
     </ul>
   </nav>
@@ -213,19 +228,19 @@
   <footer>
     <div class="footer__row">
       <div>
-        <h2><a href="/">Photograf</a></h2>
+        <h2><a href="#">Photograf</a></h2>
         <p>The personal website of Jesse McJessesen, professional photographer.</p>
         <h3 class="a11y">Find us on the web with:</h3>
         <nav>
           <ul class="links_social footer--links">
             <li>
-              <a href="/facebook.com/logo" class="icon icon_facebook">Facebook: Logo</a>
+              <a href="https://facebook.com/logo" class="icon icon_facebook">Facebook: Logo</a>
             </li>
             <li>
-              <a href="/twitter.com/logo" class="icon icon_twitter">Twitter: @Logo</a>
+              <a href="https://twitter.com/logo" class="icon icon_twitter">Twitter: @Logo</a>
             </li>
             <li>
-              <a href="/instagram.com/logo" class="icon icon_instagram">Instagram: Logo</a>
+              <a href="https://instagram.com/logo" class="icon icon_instagram">Instagram: Logo</a>
             </li>
           </ul>
         </nav>
@@ -234,19 +249,19 @@
       <h3 class="a11y">Our websites</h3>
       <ul class="links_site">
         <li class="active">
-          <a href="/">Home</a>
+          <a href="#">Home</a>
         </li>
         <li>
-          <a class="about" href="/about">About</a>
+          <a class="about" href="#about">About</a>
         </li>
         <li>
-          <a class="protfolio" href="/portfolio">Portfolio</a>
+          <a class="protfolio" href="#portfolio">Portfolio</a>
         </li>
         <li>
-          <a class="blog" href="/blog">Blog</a>
+          <a class="blog" href="#blog">Blog</a>
         </li>
         <li>
-          <a class="contact" href="/contact">Contact</a>
+          <a class="contact" href="#contact">Contact</a>
         </li>
       </ul>
 
@@ -254,7 +269,7 @@
         <ul class="posts__comments">
           <li>
             <p class="poster_profile">
-              <a href="/profile">
+              <a href="#profile">
                 <img class="image_profile" src="./images/woman_xs.jpg"
                 width="70"
                 height="48"
@@ -275,7 +290,7 @@
 
           <li>
             <p class="poster_profile">
-              <a href="/profile">
+              <a href="#profile">
                 <img class="image_profile" src="./images/arches_sm.jpg"
                 width="70"
                 height="48"
