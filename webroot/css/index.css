@@ -101,6 +101,16 @@ body > [type="checkbox"] {
   top: 8px;
   cursor: pointer; }
 
+body > [type="checkbox"]:checked ~ .navigation > label {
+  margin-right: 0;
+  margin-left: auto;
+  opacity: 1;
+  background-image: url(../images/icon_close.svg);
+  height: auto; }
+
+.navigation li:hover:parent {
+  background-color: red; }
+
 .navigation > ul a {
   text-transform: capitalize;
   text-transform: capitalize;
@@ -257,7 +267,6 @@ body > header h1 > a {
   padding-block-start: 16px; }
 
 .section__perspective header > a {
-  padding-inline-start: 1.5rem;
   color: #000000;
   opacity: .5; }
 
