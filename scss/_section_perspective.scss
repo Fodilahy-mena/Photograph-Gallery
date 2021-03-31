@@ -6,7 +6,7 @@
   margin-right: 16px;
 }
 .section__perspective header {
-  padding-block-start: $common_padding;
+  padding-block-start: 31px;
 }
 
 .section__perspective header > a {
@@ -23,6 +23,7 @@
   font-weight: normal;
   font-size: $default_font_size + 36;
   line-height: 64px;
+  margin-top: 61px;
 }
 
 .section__perspective > header > p {
@@ -35,7 +36,7 @@
   padding-block-start: $common_padding;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
   margin-inline-end: -$common_padding;
 }
 .perspective__samples img {
@@ -134,6 +135,23 @@
     min-width: $content_width_desktop;
     margin: auto;
   }
+
+  .section__perspective header {
+    padding-block-start: 49px;
+  }
+
+  .section__perspective > header > h2 {
+    font-size: $default_font_size + 56;
+    line-height: 80px;
+    max-width: 457px;
+    margin-top: 38px;
+  }
+
+  .section__perspective h3 {
+    font-size: $default_font_size + 36;
+    line-height: 64px;
+  }
+
   .perspective__samples {
     margin-inline-end: unset;
   }
@@ -157,7 +175,10 @@
   .mineral {
     display: flex;
   }
-
+  .samples__slides img {
+    max-width: var(--slide-img-width);
+    min-width: auto;
+  }
   .samples__slides img:nth-of-type(1) {
     margin-inline-start: 0;
   }
@@ -165,16 +186,6 @@
     margin-inline-end: 0;
   }
   
-  .section__perspective > header > h2 {
-    font-size: $default_font_size + 56;
-    line-height: 80px;
-    max-width: 457px;
-  }
-
-  .section__perspective h3 {
-    font-size: $default_font_size + 36;
-    line-height: 64px;
-  }
 }
 
 // Style when using js

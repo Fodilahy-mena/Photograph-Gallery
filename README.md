@@ -1,12 +1,10 @@
 # Front-end final mockup-to-website project
 
-Hey everyone! 
+This was our final project in the front-end course as a test.
 
-This will be our final project in the front-end course, so let's make it a good one :)
+We all fork-and-clone this project as our own repo.
 
-Please fork-and-clone this project as your own repo.
-
-First things first, let's get you set up. You will need the following…
+Set up...
 
 ## Dependencies
 
@@ -16,7 +14,7 @@ First things first, let's get you set up. You will need the following…
 
 ## Install
 
-We'll be using `node-sass` for our Sass compilation. Let's install that by doing:
+Install `node-sass` for the Sass compilation by doing:
 
 1. `npm i`
 
@@ -24,83 +22,59 @@ We'll be using `node-sass` for our Sass compilation. Let's install that by doing
 
 ### Design
 
-You can find the design:
+Find the design here:
 
 - online at [figma.com/Laaqiq-1-Portfolio-detail-Responsive](https://www.figma.com/file/VgF87mULloYb7HZ1EMCRzU/Laaqiq-1-Portfolio-detail-Responsive?node-id=0%3A1) (Recommended)
 - by importing the `.fig` file in [the `source_materials` folder](./source_materials/) into your figma app.
 
-### Source files
-
-Have a look in the `source_materials` folder. There you'll find any fonts you need, images that are required by the design work.
-
-2. Install any OTF/TTF fonts found in the `source_materials/fonts` folder in your system, so that you don't get bugged by Figma's Font replacement dialog box.
-
 ### Webroot
 
-As with most setups, it's a good idea to isolate all the web-files in the `webroot` folder.
-Export all the images, fonts, HTML, JS, and CSS you use to this webroot folder (in the right subfolder of course!).
+For a struture reason, it's a good idea to isolate all the web-files in the `webroot` folder.
+Something like images, fonts, HTML, JS, and CSS.
 
 3. Create a `webroot/index.html` file.
 
 ### Sass
 
-We'll be using the `scss` folder for all our Sass files.
+It is better to use an `scss` folder for all the Sass files.
 
-4. Create a `scss/index.scss` file, that will act as our manifest Sass file.
-5. Build your CSS file once by running the `npm run scss` script.
+4. Create a `scss/index.scss` file, that will act as the manifest Sass file.
+5. Build a CSS file once by running the `npm run scss` script.
 
-All your Sass files will be output to the `webroot/css` folder.
+All the Sass files will be output to the `webroot/css` folder.
 
-### Linking up our styles
+### Linking up styles
 
-6. Link up the new `webroot/css/index.css` stylesheet in your `index.html`
+6. Link up the new `webroot/css/index.css` stylesheet in the `index.html`
 
 ## Development
 
-You'll want to run the `scss:watch` task when you're developing this project.
+Run the `scss:watch` task when developing this project.
 
 ## Marking & requirements
 
-You have 5 days to convert the design work to a working single webpage. There's a lot to cover here in a week, and we don't expect you to have the entire website done in that time, but it would be great if you could.
-
-So, what is expected then? We're going to be marking most of the things we've learned this year. Here's a list of things we'll be looking at:
-
 - **All the HTML**
-  - Your HTML should be clean, accurate, and consistent.
+  - The HTML should be clean, accurate, and consistent.
   - Use the right elements for the right job.
-  - Structure your HTML nicely.
-  - Make sure your HTML is accessible.
-  - Make sure your HTML is valid.
-  - *Bonus points*: Progressively enhancing your HTML, e.g. using `<picture>` elements with multiple sources.
-- **As much Sass as you can**
-  - Your Sass should use variables at a minimum, and be extended with mixins, functions, and abstract classes if you can.
-  - Your Sass output should be orderly, and expected.
-  - Keep your SCSS files clean
+  - Structure the used HTML nicely.
+  - Make sure the used HTML is accessible.
+  - Make sure the used HTML is valid.
+  
+- **As much Sass as possible**
+  - Sass should use variables at a minimum, and be extended with mixins, functions, and abstract classes if possible.
+  - Sass output should be orderly, and expected.
+  - Keep SCSS files clean
   - Add helpful comments to the difficult-to-understand parts.
-  - You don't have to style everything within the time-frame. But we want to see completed components where possible.
+
 - **CSS**
   - Add style to elements that the user can focus, hover over, or interact with.
-  - Your work should be Mobile-First by default, and Responsive.
-  - *Bonus points*: Use Custom Properties if you can.
+  - The work should be Mobile-First by default, and Responsive.
+
 - **Images**
-  - Are you using a CSS `background-image` or an `<img>` in the HTML? Make sure it's for the right reasons.
+  - Using a CSS `background-image` or an `<img>` in the HTML? Make sure it's for the right reasons.
   - Use the correct image format for each case
-  - *Bonus points*: Compress your images
+ 
 - **Fonts**
-  - If you'd like, use a `fonts.google.com`-supplied stylesheet for the fonts, but we really want to see you use your own `@font-face` declarations. Link up the WOFF2 and WOFF formats to your CSS using as many `@font-face` at-rules as you need.
+  - Use a `fonts.google.com`-supplied stylesheet for the fonts, but better use `@font-face` declarations. Link up the WOFF2 and WOFF formats to CSS using as many `@font-face` at-rules as needed.
   - Use `local()` functions for locally-installed fonts.
-  - Test that your website works without local font support.
-  - *Bonus points*: Subset your fonts
-- **General**
-  - No spelling or grammar mistakes please
-  - Test, test, test!
-  - Don't feel pressure to complete the entire page, but rather try complete each component you start. **Leave out the bits that look too complex and work on them at the end!**
-  - Ensure your commits are frequent and well-described.
-- **Advanced**
-  - Make the menu on mobile work nicely, use your own imagination here.
-  - *Bonus points*: Make the Image Slider, and other components work as intended, maybe you'll need some JS?
-  - *Bonus points*: Use newer image formats such as WebP and AVIF, while still maintaining support for older formats.
-
-## Ready?
-
-Apply everything you've learend before, do your best, and Good luck! 🤓
+  - Test that website works without local font support.

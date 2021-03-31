@@ -1,14 +1,5 @@
 
 function Slide(slide) {
-  // throw an error ('No Slide is found)
-  // if(!slide) {
-  //   throw Error('No Slde is sound');
-  // }
-
-  // select all the images once by class
-
-  // const images = Array.from(slide.querySelectorAll('.img'));
-  // console.log(images);
 
   const activeImg = document.querySelector('.ative--img');
   const prevButton = activeImg.querySelector('.prev');
@@ -90,3 +81,12 @@ sliders.forEach((image, index) => {
 }
 
 const imgConatiner = Slide(document.querySelector('.image-container'));
+
+const listItems = document.querySelectorAll(".list__item");
+
+listItems.forEach((item) => {
+  const CheckBox = document.querySelector('#menu_checkbox');
+  item.addEventListener('click', e => {
+    CheckBox.checked = false;
+  });
+});

@@ -201,6 +201,8 @@ body > [type="checkbox"]:checked ~ .navigation > label {
   .navigation > ul a {
     color: #FFFFFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+  .navigation > ul > li:last-child a {
+    padding-inline-end: 0; }
   .navigation > ul > li a:hover {
     color: #FFDD78;
     text-shadow: unset; } }
@@ -264,7 +266,7 @@ body > header h1 > a {
   margin-right: 16px; }
 
 .section__perspective header {
-  padding-block-start: 16px; }
+  padding-block-start: 31px; }
 
 .section__perspective header > a {
   color: #000000;
@@ -277,7 +279,8 @@ body > header h1 > a {
   font-family: dmSerifDisplayRegular;
   font-weight: normal;
   font-size: 52px;
-  line-height: 64px; }
+  line-height: 64px;
+  margin-top: 61px; }
 
 .section__perspective > header > p {
   font-size: 18px;
@@ -287,7 +290,7 @@ body > header h1 > a {
   padding-block-start: 16px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
   margin-inline-end: -16px; }
 
 .perspective__samples img {
@@ -369,6 +372,16 @@ body > header h1 > a {
     max-width: 1114px;
     min-width: 1114px;
     margin: auto; }
+  .section__perspective header {
+    padding-block-start: 49px; }
+  .section__perspective > header > h2 {
+    font-size: 72px;
+    line-height: 80px;
+    max-width: 457px;
+    margin-top: 38px; }
+  .section__perspective h3 {
+    font-size: 52px;
+    line-height: 64px; }
   .perspective__samples {
     margin-inline-end: unset; }
   .samples__visible {
@@ -385,17 +398,13 @@ body > header h1 > a {
     margin-inline-start: 15%; }
   .mineral {
     display: flex; }
+  .samples__slides img {
+    max-width: var(--slide-img-width);
+    min-width: auto; }
   .samples__slides img:nth-of-type(1) {
     margin-inline-start: 0; }
   .samples__slides img:last-child {
-    margin-inline-end: 0; }
-  .section__perspective > header > h2 {
-    font-size: 72px;
-    line-height: 80px;
-    max-width: 457px; }
-  .section__perspective h3 {
-    font-size: 52px;
-    line-height: 64px; } }
+    margin-inline-end: 0; } }
 
 .samples__visible {
   display: grid;
