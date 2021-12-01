@@ -1,24 +1,20 @@
 # Photograph Gallery
 
 <div>
-  <h3>
+  <h2>
     <a href="https://j-emilien-photograf.netlify.app/">
       Live demo
     </a>
-  </h3>
+  </h2>
 </div>
-
-Forked repository from <a href="https://github.com/onja-org/front-end-finals">
-      Front end finals
-    </a> as a final project in the front-end course.
 
 ## Overview
 
 ### On mobile view
-![image](./webroot/images/screenshot-demo-mobile-view.png)
+![image](./webroot/images/photograf-mobile.png)
 
 ### On desktop view
-![image](./webroot/images/screenshot-demo-desktop-view.png)
+![image](./webroot/images/photograf-desktop.png)
 
 Set up...
 
