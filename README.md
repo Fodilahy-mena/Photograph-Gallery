@@ -1,8 +1,24 @@
 # Photograph Gallery
 
-This was our final project in the front-end course as a test.
+<div>
+  <h3>
+    <a href="https://j-emilien-photograf.netlify.app/">
+      Live demo
+    </a>
+  </h3>
+</div>
 
-We all fork-and-clone this project as our own repo.
+Forked repository from <a href="https://github.com/onja-org/front-end-finals">
+      Front end finals
+    </a> as a final project in the front-end course.
+
+## Overview
+
+### On mobile view
+![image](./webroot/images/screenshot-demo-mobile-view.png)
+
+### On desktop view
+![image](./webroot/images/screenshot-demo-desktop-view.png)
 
 Set up...
 
