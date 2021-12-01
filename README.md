@@ -1,4 +1,4 @@
-# Front-end final mockup-to-website project
+# Photograph Gallery
 
 This was our final project in the front-end course as a test.
 
