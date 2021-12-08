@@ -41,7 +41,7 @@ Find the design here:
 
 ### Webroot
 
-For a struture reason, it's a good idea to isolate all the web-files in the `webroot` folder.
+For a structure reason, it's a good idea to isolate all the web-files in the `webroot` folder.
 Something like images, fonts, HTML, JS, and CSS.
 
 3. Create a `webroot/index.html` file.
